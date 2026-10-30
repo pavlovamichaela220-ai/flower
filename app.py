@@ -12,24 +12,16 @@ st.markdown("""
 <style>
 
 .stApp {
-    background-color: #fff5f8;
+    background-color: #fff7fa;
 }
 
 .title {
     font-family: 'Parisienne', cursive;
     font-size: 140px;
-    color: #d88ca8;
+    color: #c98aa3;
     text-align: center;
-    margin-top: 90px;
+    margin-top: 100px;
     line-height: 1;
-}
-
-.subtitle {
-    text-align: center;
-    color: #a07d8e;
-    font-size: 22px;
-    letter-spacing: 4px;
-    margin-top: 10px;
 }
 
 </style>
@@ -38,7 +30,6 @@ st.markdown("""
 st.markdown(
     """
     <div class="title">Florique</div>
-    <div class="subtitle">FLOWERS • GIFTS • LIFESTYLE</div>
     """,
     unsafe_allow_html=True
 )
