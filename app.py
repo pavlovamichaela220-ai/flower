@@ -11,72 +11,56 @@ st.markdown("""
 
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 
-.stApp {
-    background-color: #fff7fa;
+.stApp{
+    background-color:#fff7fa;
 }
 
-.main {
-    padding-top: 20px;
+.hero{
+    background-image:url("https://raw.githubusercontent.com/pavlovamichaela220-ai/flower/main/frame.png");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+
+    height:900px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
 }
 
-.frame-container {
-    position: relative;
-    max-width: 1300px;
-    margin: auto;
+.title{
+    font-family:'Parisienne', cursive;
+    font-size:170px;
+    color:#c98aa3;
+
+    margin-bottom:20px;
+
+    transition:0.4s;
 }
 
-.florique-title {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    font-family: 'Parisienne', cursive;
-    font-size: 150px;
-    color: #c98aa3;
-
-    transition: all 0.4s ease;
-}
-
-.florique-title:hover {
-    color: #e7b8cb;
+.title:hover{
+    color:#e6b3c8;
 
     text-shadow:
-        0 0 12px rgba(231,184,203,0.6),
-        0 0 24px rgba(231,184,203,0.4),
-        0 0 40px rgba(231,184,203,0.3);
+        0 0 10px rgba(230,179,200,.7),
+        0 0 25px rgba(230,179,200,.5),
+        0 0 45px rgba(230,179,200,.3);
 
-    transform: translate(-50%, -50%) scale(1.05);
+    transform:scale(1.05);
 }
 
-.slogan {
-    position: absolute;
-    top: 56%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    font-size: 26px;
-    color: #8d7a82;
-
-    letter-spacing: 2px;
-    font-weight: 300;
+.slogan{
+    font-size:28px;
+    color:#86747d;
+    letter-spacing:2px;
 }
 
 </style>
-""", unsafe_allow_html=True)
 
-st.markdown('<div class="frame-container">', unsafe_allow_html=True)
-
-st.image("frame.png", use_container_width=True)
-
-st.markdown("""
-<div class="florique-title">
-Florique
+<div class="hero">
+    <div class="title">Florique</div>
+    <div class="slogan">Flowers on your schedule.</div>
 </div>
 
-<div class="slogan">
-Flowers on your schedule.
-</div>
 """, unsafe_allow_html=True)
-
-st.markdown("</div>", unsafe_allow_html=True)
