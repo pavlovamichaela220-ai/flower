@@ -9,49 +9,79 @@ st.set_page_config(
 st.markdown("""
 <style>
 
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
 .stApp {
     background-color: #fff7fa;
 }
 
 .title {
     font-family: 'Parisienne', cursive;
-    font-size: 140px;
+    font-size: 150px;
     color: #c98aa3;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 0;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    line-height: 1;
 }
 
-.text {
-    max-width: 700px;
-    margin: auto;
-    color: #8f7a84;
+.ornament {
     text-align: center;
-    font-size: 20px;
-    line-height: 1.8;
+    font-size: 42px;
+    color: #d9b6c3;
+    letter-spacing: 8px;
+}
+
+.description {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    color: #8f7a84;
+    font-size: 22px;
+    line-height: 1.9;
 }
 
 </style>
 """, unsafe_allow_html=True)
 
-st.image("textures/ornament_top.png", use_container_width=True)
-
 st.markdown(
-    '<div class="title">Florique</div>',
+    """
+    <div class="ornament">
+    ❀ ❦ ❀ ✿ ❀ ❦ ❀
+    </div>
+    """,
     unsafe_allow_html=True
 )
 
-st.markdown("""
-<div class="text">
+st.markdown(
+    """
+    <div class="title">Florique</div>
+    """,
+    unsafe_allow_html=True
+)
 
-A flower studio open 24/7.
+st.markdown(
+    """
+    <div class="ornament">
+    ❀ ❦ ❀ ✿ ❀ ❦ ❀
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
-Choose every stem yourself and create a bouquet that reflects your style.
-Between 8:00 and 17:00, our florists are available to hand-tie your arrangement.
+st.markdown(
+    """
+    <div class="description">
+    Welcome to Florique.<br><br>
 
-Outside these hours, Florique becomes a fully self-service flower bar where creativity blooms at any time of day.
+    A flower studio open 24 hours a day, 7 days a week.
 
-</div>
-""", unsafe_allow_html=True)
+    Choose each stem individually and create a bouquet that feels uniquely yours.
+    During florist hours from 8:00 to 17:00, our team can professionally hand-tie your arrangement.
 
-st.image("textures/ornament_bottom.png", use_container_width=True)
+    Outside these hours, Florique transforms into a fully self-service flower bar, allowing you to select, arrange and wrap your flowers whenever inspiration strikes.
+    </div>
+    """,
+    unsafe_allow_html=True
+)
