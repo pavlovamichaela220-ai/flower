@@ -7,9 +7,8 @@ st.set_page_config(
 )
 
 st.markdown("""
-<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
-
 <style>
+
 .stApp {
     background-color: #fff7fa;
 }
@@ -19,34 +18,40 @@ st.markdown("""
     font-size: 140px;
     color: #c98aa3;
     text-align: center;
-    margin-top: 90px;
-    margin-bottom: 10px;
-    line-height: 1;
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
-.description {
+.text {
     max-width: 700px;
     margin: auto;
-    text-align: center;
     color: #8f7a84;
+    text-align: center;
     font-size: 20px;
     line-height: 1.8;
 }
+
 </style>
 """, unsafe_allow_html=True)
+
+st.image("textures/ornament_top.png", use_container_width=True)
 
 st.markdown(
     '<div class="title">Florique</div>',
     unsafe_allow_html=True
 )
 
-st.markdown(
-    """
-    <div class="description">
-    A self-service flower studio open 24/7.<br>
-    Choose your favourite flowers, create your own bouquet,
-    or let one of our florists hand-tie it for you between 8:00 and 17:00.
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+st.markdown("""
+<div class="text">
+
+A flower studio open 24/7.
+
+Choose every stem yourself and create a bouquet that reflects your style.
+Between 8:00 and 17:00, our florists are available to hand-tie your arrangement.
+
+Outside these hours, Florique becomes a fully self-service flower bar where creativity blooms at any time of day.
+
+</div>
+""", unsafe_allow_html=True)
+
+st.image("textures/ornament_bottom.png", use_container_width=True)
